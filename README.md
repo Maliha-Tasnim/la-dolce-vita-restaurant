@@ -13,6 +13,9 @@
   
   <h3 align="center"><a href="https://la-dolce-vita-restaurant.netlify.app"><strong> 🌟 Website Demo 🌟 </strong></a></h3>
 
+![desktop](https://github.com/user-attachments/assets/8cc04075-f82b-4f29-ba58-5b5c3537fee4)
+
+
 ## Project Overview
 
 
