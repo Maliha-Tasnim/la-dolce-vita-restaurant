@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/React Responsive Carousel-darkblue?style=for-the-badge&logo=react-responsive-carousel&logoColor=darkblue" alt="React Responsive Carousel" />
 </p>
   
-  <h3 align="center"><a href=""><strong> 🌟 Website Demo 🌟 </strong></a></h3>
+  <h3 align="center"><a href="https://la-dolce-vita-restaurant.netlify.app"><strong> 🌟 Website Demo 🌟 </strong></a></h3>
 
 ## Project Overview
 
