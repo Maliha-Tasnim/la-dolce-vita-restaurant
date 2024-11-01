@@ -15,7 +15,7 @@ export default function Heading() {
                             We focus on authentic italian recipes served with a modern twist.
                             We make all our delicious food with ultimate love & passion.</p>
                         <br></br>
-                        <Link className="action-button" to="/reservations">Reserve a table</Link>
+                        <Link className="action-button" to="/reservations">Reserve Your Table</Link>
                     </section>
 
                     

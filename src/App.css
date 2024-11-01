@@ -159,9 +159,10 @@ Link:link {
 }
 
 .specials-topbar > h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .specials-cards {
@@ -467,6 +468,66 @@ footer > menu {
   .about-us {
     grid-gap: 12vw;
   }
+
+  /* Tablet View */
+  .call-to-action {
+    padding: 1.25rem 2rem;
+  }
+  .hero-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .hero-text > h1 {
+    font-size: 2.5rem;
+    margin-bottom: -1rem;
+  }
+
+  .hero-text > p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+  }
+
+  .hero-image {
+    max-height: 15rem;
+    padding-left: 1rem;
+  }
+
+  /* Specials Section */
+  .specials {
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .specials-cards {
+    display: none;
+  }
+
+  .specials-carousel {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Testimonials Section */
+  .testimonials {
+    padding: 2rem;
+  }
+
+  .testimonials-cards {
+    display: none;
+  }
+
+  .testimonials-carousel {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 50rem) {
@@ -616,6 +677,128 @@ footer > menu {
     margin-top: -0.3rem;
     margin-left: -0.5rem;
   }
+
+  /* Mobile View */
+  .call-to-action {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .hero-text > h1 {
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .hero-text > p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  /* Specials Section */
+  .specials {
+    padding: 1rem;
+  }
+
+  .specials-carousel {
+    width: 100%;
+  }
+
+  .menu-card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .menu-card > img {
+    height: 200px;
+  }
+
+  .menu-card-content {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .menu-card-content > h1 {
+    font-size: 1.5rem;
+  }
+
+  .menu-card-content > h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Testimonials Section */
+  .testimonials {
+    padding: 1rem;
+  }
+
+  .testimonials-carousel {
+    width: 100%;
+  }
+
+  .testimonial-card {
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+  }
+
+  /* About Section */
+  .about-us {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    text-align: center;
+    grid-gap: 1rem;
+  }
+
+  .double-image {
+    display: none;
+  }
+
+  /* Footer */
+  footer > menu {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+
+  /* Navigation */
+  .navbar-menu {
+    display: none;
+  }
+
+  .mobile {
+    display: grid;
+    padding: 0;
+  }
+
+  .burger {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding: 0.5rem;
+  }
+
+  /* Reservation Form */
+  .reservation-form {
+    padding: 1rem;
+  }
+
+  .redirect-buttons {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 90%;
+  }
+
+  .redirect-button {
+    width: 100%;
+  }
 }
 
 @keyframes slideDownFade {
@@ -655,4 +838,768 @@ footer > menu {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   color: white;
+}
+
+/* Base styles for Specials and Testimonials sections */
+.specials-carousel {
+  display: none;
+  padding: 0 1rem;
+}
+
+.testimonials-carousel {
+  display: none;
+  padding: 0 1rem;
+}
+
+.menu-card {
+  background-color: #edefee;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.testimonial-card {
+  background-color: #edefee;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 60rem) {
+  /* Tablet View */
+  .specials {
+    padding: 2rem 1rem;
+  }
+
+  .specials-topbar {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  /* Force display carousel, hide cards */
+  .specials-cards {
+    display: none !important;
+  }
+
+  .specials-carousel {
+    display: block !important;
+    width: 100% !important;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Testimonials tablet fixes */
+  .testimonials {
+    padding: 2rem 1rem;
+  }
+
+  .testimonials-cards {
+    display: none !important;
+  }
+
+  .testimonials-carousel {
+    display: block !important;
+    width: 100% !important;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Footer tablet fixes */
+  footer > menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Mobile View */
+  .specials {
+    padding: 1rem;
+  }
+
+  .specials-topbar {
+    margin-bottom: 1rem;
+  }
+
+  .specials-carousel {
+    max-width: 100%;
+  }
+
+  /* Remove bullet points */
+  .specials ul,
+  .testimonials ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Testimonials mobile fixes */
+  .testimonials {
+    padding: 1rem;
+  }
+
+  .testimonials-carousel {
+    max-width: 100%;
+  }
+
+  /* Footer mobile fixes */
+  footer > menu {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .footer-links {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer-links li {
+    list-style: none;
+    padding: 0.5rem 0;
+  }
+
+  /* Fix section spacing */
+  .specials,
+  .testimonials,
+  .about-us {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Critical carousel fixes */
+.carousel.carousel-slider {
+  width: 100% !important;
+}
+
+.carousel .slide {
+  background: none !important;
+}
+
+.carousel .control-dots {
+  margin: 0 !important;
+}
+
+/* Carousel Base Styles - Safe for all screen sizes */
+.carousel-root {
+  width: 100% !important;
+}
+
+.carousel .slide {
+  background: none !important;
+}
+
+/* Desktop-specific styles (keeping existing styles) */
+@media screen and (min-width: 60rem) {
+  .specials-carousel {
+    display: none !important;  /* Keep desktop cards visible */
+  }
+
+  .testimonials-carousel {
+    display: none !important;  /* Keep desktop cards visible */
+  }
+}
+
+/* Tablet and Mobile Fixes */
+@media screen and (max-width: 60rem) {
+  .specials {
+    padding: 1rem;
+  }
+
+  .specials-cards {
+    display: none !important;
+  }
+
+  .specials-carousel {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .testimonials-cards {
+    display: none !important;
+  }
+
+  .testimonials-carousel {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .menu-card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .menu-card > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 600px) {
+  .specials-topbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .menu-card-content {
+    padding: 1rem;
+  }
+
+  .testimonial-card {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}
+
+/* Base styles */
+.specials-content {
+  width: 100%;
+}
+
+.menu-card {
+  background-color: #edefee;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-card-content {
+  padding: 1.5rem;
+}
+
+/* Desktop styles */
+@media screen and (min-width: 60rem) {
+  .specials-carousel,
+  .testimonials-carousel {
+    display: none !important;
+  }
+  
+  .specials-cards,
+  .testimonials-cards {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Tablet and Mobile styles */
+@media screen and (max-width: 60rem) {
+  .specials {
+    padding: 1rem !important;
+  }
+
+  .specials-topbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto 2rem auto;  /* Center with auto margins */
+    padding: 0 1rem;  /* Equal padding on both sides */
+    max-width: 90%;  /* Limit width to ensure equal spacing */
+  }
+  .specials-topbar h1 {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .action-button {
+    margin: 0 auto;
+  }
+
+  .specials-cards,
+  .testimonials-cards {
+    display: none !important;
+  }
+
+  .specials-carousel,
+  .testimonials-carousel {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Carousel specific styles */
+  .carousel-root {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .carousel.carousel-slider {
+    width: 100% !important;
+  }
+
+  .carousel .slide {
+    background: none !important;
+    padding: 0 !important;
+  }
+
+  .carousel .control-dots {
+    margin: 10px 0 !important;
+  }
+
+  /* Card styles in carousel */
+  .menu-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .testimonial-card {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}
+
+/* Mobile specific adjustments */
+@media screen and (max-width: 600px) {
+  .specials-topbar h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .specials-topbar {
+    padding: 0 0.5rem;  /* Slightly less padding for mobile */
+    max-width: 95%;  /* Slightly wider for mobile */
+  }
+
+  .menu-card {
+    width: 100%;
+  }
+
+  .menu-card-content {
+    padding: 1rem;
+  }
+
+  .menu-card-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .menu-card-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Testimonial specific styles */
+.testimonials-content {
+  width: 100%;
+}
+
+.testimonial-card {
+  background-color: #edefee;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 60rem) {
+  .testimonials {
+    padding: 1rem !important;
+  }
+
+  .testimonials-topbar {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .testimonials-carousel .carousel-slide {
+    padding: 0 1rem;
+  }
+
+  .testimonial-card {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonials-topbar h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-card {
+    width: 100%;
+  }
+}
+
+/* Carousel centering styles */
+@media screen and (max-width: 60rem) {
+  .specials-carousel,
+  .testimonials-carousel {
+    display: block !important;
+    width: 90% !important;
+    max-width: 500px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Center the cards inside carousel */
+  .carousel .slide {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+
+  /* Center the content inside cards */
+  .menu-card,
+  .testimonial-card {
+    width: 100% !important;
+    max-width: 350px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Center section headings */
+  .specials-topbar,
+  .testimonials-topbar {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .specials-topbar h1,
+  .testimonials-topbar h1 {
+    margin: 0 auto 1rem auto;
+  }
+}
+
+/* Additional mobile specific adjustments */
+@media screen and (max-width: 600px) {
+  .specials-carousel,
+  .testimonials-carousel {
+    width: 85% !important;
+  }
+
+  .menu-card,
+  .testimonial-card {
+    max-width: 300px !important;
+  }
+}
+
+/* Ensure carousel controls are visible */
+.carousel .control-dots {
+  padding: 0 !important;
+  margin: 1rem 0 !important;
+}
+
+.carousel.carousel-slider .control-arrow {
+  background: rgba(0, 0, 0, 0.3) !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+@media screen and (max-width: 60rem) {
+  footer {
+    padding: 2rem 1rem;
+    background-color: #495E57;
+    color: white;
+  }
+
+  footer > menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .img-footer {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .img-footer img {
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .footer-header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .footer-links li,
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    display: block;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  /* Additional spacing for contact info */
+  .contact .footer-links li {
+    margin: 0.25rem 0;
+  }
+}
+
+/* Mobile specific adjustments */
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-header {
+    font-size: 1.3rem;
+  }
+
+  .footer-links {
+    font-size: 1rem;
+  }
+
+  /* Add space between sections */
+  footer > menu > li {
+    margin-bottom: 1.5rem;
+  }
+
+  footer > menu > li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Keep all existing desktop styles unchanged */
+
+@media screen and (max-width: 60rem) {
+  /* Only target footer menu items for Contact and Connect */
+  footer > menu {
+    display: block; /* Reset the grid */
+    padding: 1rem;
+  }
+
+  /* Hide the original Contact and Connect sections in desktop menu */
+  footer > menu > li:nth-child(2),
+  footer > menu > li:nth-child(3) {
+    display: none;
+  }
+
+  /* Add mobile/tablet specific Contact and Connect layout */
+  footer > menu::after {
+    content: "";
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto 0;
+  }
+
+  /* Style the Contact section */
+  footer > menu > li.contact-mobile {
+    display: block;
+    grid-column: 1;
+    text-align: center;
+  }
+
+  /* Style the Connect section */
+  footer > menu > li.connect-mobile {
+    display: block;
+    grid-column: 2;
+    text-align: center;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-links li {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Additional mobile tweaks if needed */
+@media screen and (max-width: 600px) {
+  footer > menu::after {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 60rem) {
+  footer {
+    background-color: #495E57;
+    color: white;
+    padding: 2rem 1rem;
+  }
+
+  footer menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .img-footer {
+    margin-bottom: 3rem;
+  }
+
+  .img-footer img {
+    width: 100px;
+    height: auto;
+  }
+
+  /* Hide Navigation */
+  li.contact {
+    display: none !important;
+  }
+
+  /* Style both sections */
+  footer menu li:nth-child(3),
+  footer menu li:nth-child(4) {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  /* Section headers */
+  .footer-header {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  /* Links and text */
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-links li,
+  .footer-links a {
+    color: #EDEFEE;
+    text-decoration: none;
+    padding: 0.7rem 0;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links a:hover {
+    color: #F4CE14;
+  }
+
+  /* Create a flex container for sections */
+  footer menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  /* Make sections full width but side by side */
+  footer menu li:nth-child(3),
+  footer menu li:nth-child(4) {
+    flex: 0 1 40%;
+    text-align: center;
+  }
+
+  /* Center Connect section links */
+  footer menu li:nth-child(4) .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer menu li:nth-child(4) .footer-links a {
+    display: inline-block;
+    padding: 0.7rem 0;
+    width: 100%;
+    text-align: center;
+  }
+/* Fix Contact section list items */
+footer menu li:nth-child(3) .footer-links {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer menu li:nth-child(3) .footer-links li,
+footer menu li:nth-child(3) .footer-links a {
+  width: 100%;
+  padding: 0.7rem 0;
+  background: none;
+  border: none;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Remove any special styling for phone number */
+footer menu li:nth-child(3) .footer-links li:nth-child(3) {
+  background: none;
+  padding: 0.7rem 0;
+  margin: 0;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+}
+ 
+
+}
+
+/* Mobile specific adjustments */
+@media screen and (max-width: 600px) {
+  footer menu li:nth-child(3),
+  footer menu li:nth-child(4) {
+    flex: 0 1 42%;
+    padding: 1rem;
+  }
+  footer menu li:nth-child(3) .footer-links li,
+  footer menu li:nth-child(3) .footer-links a {
+    padding: 0.5rem 0;
+  }
+
+  .footer-header {
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .footer-links li,
+  .footer-links a {
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+  }
 }

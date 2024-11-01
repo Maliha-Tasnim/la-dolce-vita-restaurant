@@ -31,16 +31,14 @@ export default function Footer() {
           <h1 className="footer-header">Contact</h1>
           <ul className="footer-links">
             <li>2395 Hillcrest Street,</li>
-            <li>California 93436</li>
-            <br></br>
+            <li>California, 93436</li>
             <li>(629)-257-3982</li>
-            <br></br>
             <a
               href="mailto: info@ladolcevita.com"
               target="_blank"
               rel="noreferrer"
             >
-              info@littlelemon.com
+              info@ladolcevita.com
             </a>
           </ul>
         </li>
