@@ -23,20 +23,29 @@ This repository houses the front-end codebase of the final capstone project of '
 ## Features and Functionalities
 
 🔹Dynamic User Interface: The website employs React components for a modular and maintainable architecture, ensuring a smooth and engaging user experience across various devices.
+
 🔹Interactive Menu: The menu section presents dishes in an appealing manner, potentially incorporating features like filtering, search, and detailed views with high-quality images.
+
 🔹Real-time Reservation System: Customers can book tables online through a user-friendly interface that allows them to select date, time, and party size, receiving instant confirmation.
+
 🔹Responsive Design: The website adapts seamlessly to different screen sizes and devices, ensuring optimal usability on desktops, tablets, and mobile phones.
 
 ## Technical Implementation
 
 🔹React.js: Core framework for building the user interface, managing state, and handling user interactions.
+
 🔹HTML5: Provides the structural foundation for the website's content and elements.
+
 🔹CSS3: Used for styling the website, including layout, typography, color schemes, and responsiveness.
+
 🔹JavaScript (ES6+): Enables dynamic behavior, data handling, and interaction with APIs.
 
 ## Getting Started
 
 🔹Clone the repository: git clone https://github.com/Maliha-Tasnim/la-dolce-vita-restaurant
+
 🔹Navigate to the project directory: cd la-dolce-vita-restaurant
+
 🔹Install dependencies: npm install
+
 🔹Launch the development server: npm start
