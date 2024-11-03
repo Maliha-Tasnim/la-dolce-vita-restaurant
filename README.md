@@ -15,7 +15,9 @@
 
 ![desktop](https://github.com/user-attachments/assets/a8133368-6347-4349-874c-6b7efc4cf7c2)
 
-![mobile demo](https://raw.githubusercontent.com/Maliha-Tasnim/la-dolce-vita-restaurant/src/assets/mobile%20demo%20version.gif)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Maliha-Tasnim/la-dolce-vita-restaurant/master/src/assets/mobile%20demo%20version.gif" alt="mobile demo">
+</p>
 
 ## Project Overview
 
