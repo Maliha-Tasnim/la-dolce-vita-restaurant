@@ -23,13 +23,13 @@ This repository houses the front-end codebase of the final capstone project of '
 
 ## Features and Functionalities
 
-🔹Dynamic User Interface: The website employs React components for a modular and maintainable architecture, ensuring a smooth and engaging user experience across various devices.
+1. Dynamic User Interface: The website employs React components for a modular and maintainable architecture, ensuring a smooth and engaging user experience across various devices.
 
-🔹Interactive Menu: The menu section presents dishes in an appealing manner, potentially incorporating features like filtering, search, and detailed views with high-quality images.
+2. Interactive Menu: The menu section presents dishes in an appealing manner, potentially incorporating features like filtering, search, and detailed views with high-quality images.
 
-🔹Real-time Reservation System: Customers can book tables online through a user-friendly interface that allows them to select date, time, and party size, receiving instant confirmation.
+3. Real-time Reservation System: Customers can book tables online through a user-friendly interface that allows them to select date, time, and party size, receiving instant confirmation.
 
-🔹Responsive Design: The website adapts seamlessly to different screen sizes and devices, ensuring optimal usability on desktops, tablets, and mobile phones.
+4. Responsive Design: The website adapts seamlessly to different screen sizes and devices, ensuring optimal usability on desktops, tablets, and mobile phones.
 
 ## Technical Implementation
 
